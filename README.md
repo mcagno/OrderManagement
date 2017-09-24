@@ -7,30 +7,30 @@ The project has the purpose to create an example of a small order management sys
 
 ## Assembly description
 
-###OrderManagement.WebAPI
+### OrderManagement.WebAPI
 The project contains the Web service layer for the backend.
 
-###OrderManagement.Domain
+### OrderManagement.Domain
 The project contains the domain classes needed for the backend.
 
-###OrderManagement.DTO
+### OrderManagement.DTO
 The project contains the DTO classes needed to instantiate the communication between the client and the WebAPI. This project, although not striclty needed, is used by both the backend and the client API.
 
-###OrderManagement.Assembler
+### OrderManagement.Assembler
 The project contains the classes that performs the translations between DTO and domain classes.
 
-###OrderManagement.Repository
+### OrderManagement.Repository
 The project contains repositories in order to simulate a system that store and retrieve instances. In this example the instances are stored in memory in static lists.
 
-###OrderManagement.ClientAPI
+### OrderManagement.ClientAPI
 The project contains the client API that can be used to compose an order.
 By using the OrderManager class is possible to create/edit/delete orders.
 
-###OrderManagement.ClientAPI.Tests
+### OrderManagement.ClientAPI.Tests
 The project contains a series of e2e test, to simulate the operativity.
 _Note: the tests have been written with the purpose to use the client library and not to provide a complete unit tests suite for it.
 
-##Notes
+## Notes
 During the realization of this project the following assumptions have been made:
 - the authentication and authorization of the user is managed externally, no security has been introduced
 - the purchase, shipping and fulfillment of the order is not managed
