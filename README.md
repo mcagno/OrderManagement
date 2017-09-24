@@ -1,22 +1,20 @@
-#OrderManagement project
+# OrderManagement project
 
-##Purpose
+## Purpose
 The project has the purpose to create an example of a small order management system composed by:
 - a backend using .NET WebAPI (RESTful), DDD, Dependency injection
 - an example of client API library accessing the WebAPI
 
-##Assembly description
-
-The solution is composed by the following project.
+## Assembly description
 
 ###OrderManagement.WebAPI
-The project contains the Web service layer for the backend, in order to perform the actions 
+The project contains the Web service layer for the backend.
 
 ###OrderManagement.Domain
 The project contains the domain classes needed for the backend.
 
 ###OrderManagement.DTO
-The project contains the DTO classes needed to instantiate the communication between the client and the WebAPI. This project, although not striclty needed, is used by both the backend and the client API
+The project contains the DTO classes needed to instantiate the communication between the client and the WebAPI. This project, although not striclty needed, is used by both the backend and the client API.
 
 ###OrderManagement.Assembler
 The project contains the classes that performs the translations between DTO and domain classes.
@@ -34,6 +32,6 @@ _Note: the tests have been written with the purpose to use the client library an
 
 ##Notes
 During the realization of this project the following assumptions have been made:
-* the authentication and authorization of the user is managed externally, no security has been introduced
-* the purchase, shipping and fulfillment of the order is not managed
-* due to a lack of time, error cases (order not existent, product not existent, invalid price etc.) have not been written
+- the authentication and authorization of the user is managed externally, no security has been introduced
+- the purchase, shipping and fulfillment of the order is not managed
+- due to a lack of time, error cases (order not existent, product not existent, invalid price etc.) have not been written
